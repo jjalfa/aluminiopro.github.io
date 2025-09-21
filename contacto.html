@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="site-header layer layer-top">
+    <div class="container">
+      <a href="index.html" class="brand"><img src="imagenes/logo.png" alt="logo" class="logo"></a>
+      <button id="menuToggle" class="menu-toggle" aria-label="menu">☰</button>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contacto</h1>
+    <div class="site-layout">
+      <aside class="aside">
+        <h4>Información</h4>
+        <p>Tel: +52 55 1234 5678</p>
+        <a href="https://www.google.com/maps" target="_blank"><h4>Ubicacion</h4></a>
+        <p>Av. Vasco De Quiroga 
+          Col. Santa Fe, CDMX
+          C.P. 03100, México</p>
+      </aside>
+      <section class="main">
+        <form id="contactoForm">
+          <label>Nombre</label><br><input type="text" id="nombre" required><br>
+          <label>Email</label><br><input type="email" id="email" required><br>
+          <label>Mensaje</label><br><textarea id="mensaje"></textarea><br>
+          <button type="submit">Enviar</button>
+        </form>
+        <div id="status"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer layer layer-bottom">
+    <div class="container">
+      <marquee behavior="scroll" direction="left">Promoción: 10% de descuento en puertas comerciales durante este mes.
+        Contáctanos.</marquee>
+      <p>© 2025 AluminioPro</p>
+    </div>
+  </footer>
+
+  <script src="common.js"></script>
+  <script>
+    document.getElementById('contactoForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('email').value.trim();
+      if (!nombre || !email) {
+        document.getElementById('status').textContent = 'Por favor completa nombre y email.';
+        return;
+      }
+      document.getElementById('status').textContent = 'Formulario enviado (simulado).';
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Galería</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="site-header layer layer-top">
+    <div class="container">
+      <a href="index.html" class="brand"><img src="imagenes/logo.png" alt="logo" class="logo"></a>
+      <button id="menuToggle" class="menu-toggle" aria-label="menu">☰</button>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Galería</h1>
+    <p class="gallery-description">Explora nuestros proyectos más destacados y descubre la calidad y elegancia de
+      nuestros trabajos en aluminio.</p>
+
+    <div class="gallery-container">
+      <div class="project-card">
+        <div class="project-image">
+           <img class="ventana" src="imagenes/polanco.jpg" alt="Portada taller" width="400px" height="250px">
+        </div>
+        <div class="project-info">
+          <h3>Residencia Moderna en Polanco</h3>
+          <p>Instalación completa de ventanas panorámicas en residencia de lujo.</p>
+          <div class="project-details">
+            <div class="detail-item">
+              <span class="detail-label">Ubicación:</span>
+              <span class="detail-value">Polanco, CDMX</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Cliente:</span>
+              <span class="detail-value">Familia Rodríguez</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+           <img class="ventana" src="imagenes/oficcina.jpg" alt="Portada taller" width="400px" height="250px">
+        </div>
+        <div class="project-info">
+          <h3>Oficinas Corporativas Torre Ejecutiva</h3>
+          <p>Sistema de puertas de seguridad para edificio corporativo.</p>
+          <div class="project-details">
+            <div class="detail-item">
+              <span class="detail-label">Ubicación:</span>
+              <span class="detail-value">Santa Fe, CDMX</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Cliente:</span>
+              <span class="detail-value">Grupo Empresarial ABC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img class="ventana" src="imagenes/hotel.jpeg" alt="Portada taller" width="400px" height="250px">
+        </div>
+        <div class="project-info">
+          <h3>Hotel Boutique Centro Histórico</h3>
+          <p>Canceles de baño personalizados para hotel de lujo.</p>
+          <div class="project-details">
+            <div class="detail-item">
+              <span class="detail-label">Ubicación:</span>
+              <span class="detail-value">Centro Histórico, CDMX</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Cliente:</span>
+              <span class="detail-value">Hotel Boutique Colonial</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <h2 style="margin-top:40px;">Audio incrustado</h2>
+    <audio controls>
+      <source src="multimedia/explicacion.mp3" type="audio/mpeg">
+      <source src="multimedia/explicacion.ogg" type="audio/ogg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <h2 style="margin-top:20px;">Video demostrativo</h2>
+    <video controls width="100%" style="max-width:640px;">
+      <source src="multimedia/video.mp4" type="video/mp4">
+      <source src="multimedia/video.webm" type="video/webm">
+      Tu navegador no soporta el elemento de video.
+    </video>
+  </main>
+
+  <footer class="site-footer layer layer-bottom">
+    <div class="container">
+      <marquee behavior="scroll" direction="left">Promoción: 10% de descuento en puertas comerciales durante este mes.
+        Contáctanos.</marquee>
+      <p>© 2025 AluminioPro</p>
+    </div>
+  </footer>
+
+  <script src="common.js"></script>
+</body>
+
+</html>

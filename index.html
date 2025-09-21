@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AluminioPro - Inicio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="site-header layer layer-top">
+    <div class="container">
+      <a href="index.html" class="brand"><img src="imagenes/logo.png" alt="logo" class="logo"></a>
+      <button id="menuToggle" class="menu-toggle" aria-label="menu">☰</button>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="site-layout">
+      <aside class="aside layer layer-side">
+        <h3>Menú</h3>
+        <ul class="nav-list" style="flex-direction:column;">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="productos.html">Ir a Productos</a></li>
+          <li><a href="docs/manual_prueba.txt" target="_blank" rel="noopener">Descargar documento</a></li>
+        </ul>
+        <div style="margin-top:16px;">
+          <h4>Visitas</h4>
+          <p>Has visitado este sitio <strong id="visitCount">0</strong> veces.</p>
+        </div>
+      </aside>
+      <section class="main">
+        <h1 id="inicio">Trabajos profecionales en aluminio</h1>
+        <p>Transformamos espacios con ventanas, puertas, canceles y estructuras de aluminio de la más alta calidad.
+          Diseños modernos, instalación profesional y garantía total.</p>
+        <div
+          style="display:flex; gap:16px; align-items:center; flex-wrap: wrap; justify-content: space-around; margin: 24px 0;">
+          <div class="stat-card">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Años de Experiencia</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Proyectos Completados</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Clientes Satisfechos</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Soporte Técnico</div>
+          </div>
+        </div>
+        <h2 style="margin-top:24px;">Nuestros Trabajos Más Populares</h2>
+        <p>Descubre nuestra selección de productos más solicitados, diseñados con la más alta calidad y tecnología de
+          vanguardia en aluminio.</p>
+
+        <div class="popular-products">
+          <div class="product-card-popular">
+            <div class="product-image-placeholder">
+              <img class="ventana" src="imagenes/ventana corredisa.jpeg" alt="Portada taller" width="200px" height="250px">
+            </div>
+            <div class="product-info">
+              <h3>Ventanas Corredizas Premium</h3>
+              <p>Ventanas de aluminio con cristal templado y sistema de seguridad avanzado.</p>
+              <ul>
+                <li><strong>Cristal templado</strong> - Nueva reforzado</li>
+                <li><strong>Sistema inclinado</strong></li>
+              </ul>
+              <div class="product-price">
+                <span>Desde $8,500</span>
+                <a href="contacto.html" class="cta-button">Cotizar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card-popular">
+            <div class="product-image-placeholder">
+               <img class="ventana" src="imagenes/puerta aluminio.jpeg" alt="Portada taller" width="200px" height="250px">
+            </div>
+            <div class="product-info">
+              <h3>Puertas de Seguridad</h3>
+              <p>Puertas de aluminio con múltiples puntos de cerco y diseño moderno.</p>
+              <ul>
+                <li><strong>Múltiples corredores</strong></li>
+                <li><strong>Diseño personalizable</strong></li>
+                <li><strong>Resistente al clima</strong></li>
+              </ul>
+              <div class="product-price">
+                <span>Desde $12,000</span>
+                <a href="contacto.html" class="cta-button">Cotizar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card-popular">
+            <div class="product-image-placeholder">
+               <img class="ventana" src="imagenes/cancel baño.jpg" alt="Portada taller" width="200px" height="250px">
+            </div>
+            <div class="product-info">
+              <h3>Canceles para Baño</h3>
+              <p>Canceles de cristal templado con perfiles de aluminio anodizado.</p>
+              <ul>
+                <li><strong>Cristal templado seguro</strong></li>
+                <li><strong>Perfiles anodizados</strong></li>
+                <li><strong>Fácil limpieza</strong></li>
+              </ul>
+              <div class="product-price">
+                <span>Desde $6,500</span>
+                <a href="contacto.html" class="cta-button">Cotizar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Background audio: autoplay una vez (puede ser bloqueado por algunos navegadores) -->
+        <audio id="bgAudio" preload="auto" autoplay loop>
+          <source src="multimedia/fondo.mp3" type="audio/mpeg">
+          <source src="multimedia/fondo.ogg" type="audio/ogg">
+        </audio>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer layer layer-bottom">
+    <div class="container">
+      <marquee behavior="scroll" direction="left">🎉 ¡Promoción especial! 20% de descuento en ventanas de aluminio
+        durante este mes • Instalación gratuita en pedidos mayores a $50,000 • Garantía extendida de 5 años en todos
+        nuestros productos • Financiamiento disponible sin intereses a 12 meses 🎉
+        Contáctanos.</marquee>
+      <p>© 2025 AluminioPro</p>
+    </div>
+  </footer>
+
+  <script src="common.js"></script>
+  <script>
+    updateVisitCounter();
+  </script>
+</body>
+
+</html>
